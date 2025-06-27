@@ -1,1 +1,1 @@
-# rhacm-ansible-aap-2.5-setup
+RHACM integration with Ansible Application Platform 2.5
