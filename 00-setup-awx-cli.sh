@@ -24,5 +24,5 @@ pip install awxkit
 
 echo "✅ Done!"
 echo "🐍 Python version: $(python -V)"
-echo "🛠️ AWX version: $(awx --version)"
+echo "🛠️  AWX version: $(awx --version)"
 
