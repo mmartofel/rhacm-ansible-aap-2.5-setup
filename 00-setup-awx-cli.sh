@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Than script sets up the AWX CLI (awxkit) in a Python 3.11 virtual environment.
+# It installs Python 3.11 via Homebrew if not already installed, creates a virtual environment,
+# and installs the AWX CLI tool.
+# It's designed to be run on macOS, for other systems, you may need to adjust the Python installation command.
+
 export PYTHONWARNINGS="ignore::UserWarning:awxkit.cli.client"
 
 set -e  # Exit on error
@@ -15,7 +20,7 @@ source ./venv/bin/activate
 
 echo "⬆️ Installing awxkit..."
 pip install --upgrade pip
-pip install awxkit==21.7.0
+pip install awxkit
 
 echo "✅ Done!"
 echo "🐍 Python version: $(python -V)"
