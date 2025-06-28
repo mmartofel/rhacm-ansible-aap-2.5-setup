@@ -27,6 +27,8 @@ This will:
 - Create a fresh `venv` directory
 - Install `awxkit` in the virtual environment
 
+![screenshot](images/1.png)
+
 ### 2. Retrieve Your AAP Controller API Token and AAP Controller host URL
 
 Run the following script to activate the virtual environment, detect your AAP Controller route, and retrieve your API token:
@@ -42,6 +44,8 @@ This script will:
 - Retrieve the AAP admin password from the `dev-admin-password` secret
 - Log in to the AAP Controller and display your API token
 
+![screenshot](images/2.png)
+
 **Sample Output:**
 ```
 Ansible Tower host: https://dev-controller-aap.apps.example.com
@@ -49,6 +53,8 @@ Ansible Tower token: <your-api-token>
 ```
 
 Use these details to configure your AAP credentials in RHACM.
+
+![screenshot](images/3.png)
 
 ## Notes
 
