@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # This script shows the Ansible Application Platform (AAP) instance details.
+# With that info you can easily create AAP credentials in Red Hat Advanced Cluster Management for Kubernetes (RHACM).
 
 set -e  # Exit on error
 
