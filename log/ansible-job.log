@@ -1,0 +1,45 @@
+[1;35m[WARNING]: Unable to parse /runner/inventory as an inventory source[0m
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+
+PLAY [localhost] ***************************************************************
+
+TASK [job_runner : Launch Project] *********************************************
+[0;36mskipping: [localhost][0m
+
+TASK [job_runner : Launch Credential] ******************************************
+[0;36mskipping: [localhost][0m
+
+TASK [job_runner : Launch Schedule] ********************************************
+[0;36mskipping: [localhost][0m
+
+TASK [job_runner : Launch Instance Group] **************************************
+[0;36mskipping: [localhost][0m
+
+TASK [job_runner : Read in Environment Variables] ******************************
+[0;32mok: [localhost][0m
+
+TASK [job_runner : Set Conditions as Facts] ************************************
+[0;32mok: [localhost][0m
+
+TASK [job_runner : Read AnsibleJob Specs] **************************************
+[0;32mok: [localhost][0m
+
+TASK [job_runner : Read AnsibleWorkflow Specs] *********************************
+[0;36mskipping: [localhost][0m
+
+TASK [job_runner : Launch a job] ***********************************************
+[0;36mincluded: /usr/share/ansible/roles/job_runner/tasks/launch_job.yml for localhost[0m
+
+TASK [job_runner : Launch job] *************************************************
+[0;31mfatal: [localhost]: FAILED! => {"changed": false, "errors": ["The field extra_vars was specified but the job template does not allow for it to be overridden"], "msg": "Parameters specified which can not be passed into job template, see errors for details"}[0m
+
+TASK [job_runner : Update status if job resulted in an error] ******************
+[0;33mchanged: [localhost][0m
+
+TASK [job_runner : End playbook run] *******************************************
+
+PLAY RECAP *********************************************************************
+[0;33mlocalhost[0m                  : [0;32mok=5   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    [0;36mskipped=5   [0m [0;32mrescued=1   [0m ignored=0   
+
